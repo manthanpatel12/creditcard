@@ -1,0 +1,93 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Texturina', serif;
+}
+.main{
+  width:100vw;
+  height:100vh;
+  display:grid;
+  place-items: center;
+  background:hsl(216,100%,94%);
+}
+.center{
+  width:600px;
+  height:380px;
+  border-radius:16px;
+  background:linear-gradient(#52b6fe,#6154fe);
+  padding:30px;
+  box-shadow:10px 20px #ddd;
+  position:relative;
+}
+.center .top{
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  color:#fff;
+  align-items:center;
+}
+.center .top h2{
+  font-size:40px;
+  font-weight:300;
+  letter-spacing:2px;
+}
+.center .top h1{
+  font-size:55px;
+  text-align:right;
+  text-transform: uppercase;
+  color:#fff;
+  z-index:999;
+}
+.center .middle img{
+  width:90px;
+  height:80px;
+  opacity:;
+  background:none center;
+}
+.center .bottom{
+  position:absolute;
+  bottom:20px;
+}
+.center .bottom h2{
+  font-size:35px;
+  font-weight:300;
+  text-transform:capitalize;
+  color:#dfe6e9;
+  margin-bottom:5px;
+  letter-spacing:1px;
+}
+.center .bottom p{
+  color:#fff;
+  font-size:35px;
+}
+.center::before{
+  content:"";
+  position:absolute;
+  width:100%;
+  height:100%;
+  left:0;
+  top:0;
+  right:0;
+  bottom:0;
+  z-index:1;
+  border-radius:16px;
+  background:linear-gradient(90deg,rgba(1,4,64,1) 4%, rgba(20,1,130,1) 24%,rgba(39,5,185,0.95359677030162) 51%,rgba(0,104,255,1)75%,rgba(5,145,184,1)93%);
+  clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 70%, 100% 100%, 100% 99%, 56% 61%, 38% 21%);
+  opacity:0.3;
+}
+.center::after{
+  content:"";
+  position:absolute;
+  width:100%;
+  height:100%;
+  left:0;
+  bottom:0;
+  top:0;
+  right:0;
+  border-radius:16px;
+  opacity:0.4;
+  z-index:1;
+  clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 70%, 100% 100%, 100% 99%, 56% 61%, 38% 21%);
+  background:url("https://cdn.pixabay.com/photo/2016/03/30/15/08/france-map-1290789__340.png");
+}
